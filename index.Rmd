@@ -33,7 +33,7 @@ trestles_mod[
 
 trestles_mod <- gsub("'Roboto Slab'", '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif', trestles_mod)
 
-trestles_mod <- gsub('style="height:35rem"', 'style="width: 50%"', trestles_mod)
+trestles_mod <- gsub('style="height:35rem"', 'style="width: 65%; max-width: 280px"', trestles_mod)
 
 cat(paste(trestles_mod, collapse = "\n"), file = system.file("pandoc_templates/trestles.html",
               package = "postcards"))
