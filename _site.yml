@@ -15,11 +15,7 @@ navbar:
     - text: "Readings"
       href: readings.html
     - text: "Resume/CV"
-      menu:
-      - text: "Resume"
-        href: "academic_resume.pdf"
-      - text: "CV"
-        href: "academic CV.pdf"
+      href: resume.html
 output_dir: "docs"
 output: 
   distill::distill_article:

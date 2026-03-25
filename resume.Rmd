@@ -2,22 +2,16 @@
 title: "Resume/CV"
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+<div class="paper-card">
+<div class="paper-title">Academic Resume</div>
+<div class="paper-authors">Zachary Thomas McDowell</div>
+<div class="paper-date">University of Washington &ndash; Department of Political Science</div>
+<a class="btn-pdf" href="academic_resume.pdf" target="_blank">&#8594; View PDF</a>
+</div>
 
-## Resume
-
-```{r resume, echo=FALSE, cache=TRUE}
-knitr::include_graphics("academic_resume v2.1.pdf")
-```
-
-***
-
-## CV
-
-```{r cv, echo=FALSE, cache=TRUE}
-knitr::include_graphics("academic CV.pdf")
-```
-
-***
+<div class="paper-card">
+<div class="paper-title">Curriculum Vitae</div>
+<div class="paper-authors">Zachary Thomas McDowell</div>
+<div class="paper-date">University of Washington &ndash; Department of Political Science</div>
+<a class="btn-pdf" href="academic CV.pdf" target="_blank">&#8594; View PDF</a>
+</div>

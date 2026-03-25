@@ -2566,6 +2566,32 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     margin-bottom: 0.35rem;
   }
 
+  .badge-resume {
+    display: inline-block;
+    background-color: #2e7d52;
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 0.18rem 0.55rem;
+    border-radius: 3px;
+    margin-bottom: 0.35rem;
+  }
+
+  .badge-cv {
+    display: inline-block;
+    background-color: #102542;
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 0.18rem 0.55rem;
+    border-radius: 3px;
+    margin-bottom: 0.35rem;
+  }
+
   /* Figures: add subtle frame on data-viz page */
   d-article figure,
   d-article .figure {
@@ -2621,17 +2647,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <a href="teaching.html">Teaching</a>
 <a href="data_viz.html">Data Visualizations</a>
 <a href="readings.html">Readings</a>
-<div class="nav-dropdown">
-<button class="nav-dropbtn">
-Resume/CV
- 
-<span class="down-arrow">&#x25BE;</span>
-</button>
-<div class="nav-dropdown-content">
-<a href="academic_resume.pdf">Resume</a>
-<a href="academic CV.pdf">CV</a>
-</div>
-</div>
+<a href="resume.html">Resume/CV</a>
 <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
 </div>
 </nav>
@@ -2650,16 +2666,30 @@ Resume/CV
 
 
 <div class="d-article">
-<h2 id="resume">Resume</h2>
-<div class="layout-chunk" data-layout="l-body">
-<p><embed src="academic_resume%20v2.1.pdf" /><!-- --></p>
+<div class="paper-card">
+<div class="paper-title">
+Academic Resume
 </div>
-<hr />
-<h2 id="cv">CV</h2>
-<div class="layout-chunk" data-layout="l-body">
-<p><embed src="academic%20CV.pdf" /><!-- --></p>
+<div class="paper-authors">
+Zachary Thomas McDowell
 </div>
-<hr />
+<div class="paper-date">
+University of Washington – Department of Political Science
+</div>
+<p><a class="btn-pdf" href="academic_resume.pdf" target="_blank">→ View PDF</a></p>
+</div>
+<div class="paper-card">
+<div class="paper-title">
+Curriculum Vitae
+</div>
+<div class="paper-authors">
+Zachary Thomas McDowell
+</div>
+<div class="paper-date">
+University of Washington – Department of Political Science
+</div>
+<p><a class="btn-pdf" href="academic CV.pdf" target="_blank">→ View PDF</a></p>
+</div>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

@@ -456,6 +456,32 @@ d-article pre {
   margin-bottom: 0.35rem;
 }
 
+.badge-resume {
+  display: inline-block;
+  background-color: #2e7d52;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.18rem 0.55rem;
+  border-radius: 3px;
+  margin-bottom: 0.35rem;
+}
+
+.badge-cv {
+  display: inline-block;
+  background-color: #102542;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.18rem 0.55rem;
+  border-radius: 3px;
+  margin-bottom: 0.35rem;
+}
+
 /* Figures: add subtle frame on data-viz page */
 d-article figure,
 d-article .figure {
