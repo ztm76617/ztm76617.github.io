@@ -2,8 +2,6 @@
 title: "Teaching Experience"
 ---
 
-## Teaching Assistant
-
 <div class="teaching-institution">University of Washington</div>
 
 <div class="course-card">
