@@ -2441,33 +2441,26 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   /* Homepage layout: use more horizontal space */
 
-  /* Make the content (right) column take more room than the photo (left) */
-  .d-flex.row.flex-row.vh-100 > .d-flex.flex-column:first-child {
-    flex: 0 0 30% !important;
-    max-width: 30% !important;
+  /* Shrink the photo column (col-5 = ~42%) down to ~28% */
+  .d-flex.row.flex-row.vh-100 > .d-flex.flex-column.col-5 {
+    flex: 0 0 28% !important;
+    max-width: 28% !important;
   }
 
-  .d-flex.row.flex-row.vh-100 > .d-flex.flex-column:last-child {
-    flex: 1 1 70% !important;
-    max-width: 70% !important;
-  }
-
-  /* Reduce the large px-5 padding on the content side */
-  .d-flex.flex-column.col.px-5 {
-    padding-left: 2rem !important;
-    padding-right: 2rem !important;
-  }
-
-  /* Let content flow naturally instead of being cramped to center */
-  .d-flex.flex-column.col.px-5.align-items-center {
+  /* Expand the content column to fill the rest */
+  .d-flex.row.flex-row.vh-100 > .d-flex.flex-column.col.px-5.mh-100 {
+    flex: 1 1 72% !important;
+    max-width: 72% !important;
+    padding-left: 2.5rem !important;
+    padding-right: 2.5rem !important;
     align-items: flex-start !important;
     text-align: left;
   }
 
-  /* Keep buttons and portrait centered in the left column */
-  .d-flex.flex-column.justify-content-center.align-items-center {
-    padding-left: 1.5rem !important;
-    padding-right: 1.5rem !important;
+  /* Let the bio/content block use full width */
+  .d-flex.flex-column.col.px-5.mh-100 #content {
+    max-width: 100% !important;
+    width: 100% !important;
   }
 
   /* Buttons on home page */
