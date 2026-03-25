@@ -9,9 +9,14 @@
    All rows must end with a semi-colon.                      */
 
 /* Optional: embed custom fonts here with `@import`          */
+
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap');
+
+
 /* This must remain at the top of this file.                 */
 
 html {
+  scroll-behavior: smooth;
   /*-- Main font sizes --*/
   --title-size:      50px;
   --body-size:       1.06rem;
@@ -24,11 +29,11 @@ html {
   --body-color:      rgba(0, 0, 0, 0.8);
   --aside-color:     rgba(0, 0, 0, 0.6);
   --fig-cap-color:   rgba(0, 0, 0, 0.6);
-  /*-- Specify custom fonts ~~~ must be imported above   --
-  --heading-font:    "Montserrat", sans-serif;
-  --mono-font:       "Montserrat", monospace;
-  --body-font:       "Montserrat", sans-serif;
-  --navbar-font:     "Montserrat", sans-serif;  /* websites + blogs only */
+  /*-- Specify custom fonts ~~~ must be imported above   --*/
+  --heading-font:    "Atkinson Hyperlegible Next", sans-serif;
+  --mono-font:       "Atkinson Hyperlegible Next", monospace;
+  --body-font:       "Atkinson Hyperlegible Next", sans-serif;
+  --navbar-font:     "Atkinson Hyperlegible Next", sans-serif;  /* websites + blogs only */
 }
 
 
@@ -62,14 +67,14 @@ d-appendix {
   --text-color:       rgba(255, 255, 255, 0.8);
   --text-size:        20px;
   --hover-color:      white;
-  --bkgd-color:       #51616f;
+  --bkgd-color:       #102542;
 }
 
 .distill-site-footer {
   --text-color:       rgba(255, 255, 255, 0.8);
   --text-size:        15px;
   --hover-color:      white;
-  --bkgd-color:       #3e4047;
+  --bkgd-color:       #102542;
 }
 
 
@@ -90,24 +95,113 @@ code, d-article pre {
 }
 
 .distill-site-nav {
-	background-color: #34495e;
+	background-color: #102542;
 	font-size: 15px;
-	font-weight: 350;
+	font-weight: 400;
+	letter-spacing: 0.015em;
 	border-bottom: solid 2px #4682b4;
 	color: #fefefe;
 }
 
 .distill-site-header .title {
   font-size: 20px;
+  letter-spacing: 0.01em;
+}
+
+.distill-site-nav a {
+  transition: color 0.15s ease;
 }
 
 .distill-site-nav a:hover {
-  font-weight: 400;
-  color: #34495e;
+  color: #a8c4d8;
 }
 
 a {
 	color: #4682b4;
+	transition: color 0.15s ease;
+}
+
+a:hover {
+  color: #1d3549;
+}
+
+/* Article headings */
+d-article h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #102542;
+  border-bottom: 2px solid #dae7f1;
+  padding-bottom: 0.35rem;
+  margin-top: 2.2rem;
+  margin-bottom: 1.1rem;
+}
+
+d-article h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1d3549;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-top: 1.8rem;
+  margin-bottom: 0.9rem;
+}
+
+/* Horizontal rules */
+d-article hr {
+  border: none;
+  border-top: 1.5px solid #dae7f1;
+  margin: 2.2rem 0;
+}
+
+/* Teaching: institution label */
+.teaching-institution {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #102542;
+  margin-top: 1.6rem;
+  margin-bottom: 0.7rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 2px solid #dae7f1;
+}
+
+/* Teaching: course cards */
+.course-card {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  border-left: 3px solid #4682b4;
+  padding: 0.55rem 0.9rem;
+  margin-bottom: 0.6rem;
+  background-color: #f5f9fd;
+  border-radius: 0 4px 4px 0;
+  transition: border-left-color 0.2s ease, background-color 0.2s ease;
+}
+
+.course-card:hover {
+  border-left-color: #102542;
+  background-color: #eaf2f8;
+}
+
+.course-code {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #4682b4;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+  min-width: 5.5rem;
+}
+
+.course-name {
+  font-size: 0.97rem;
+  color: #102542;
+  flex: 1;
+}
+
+.course-semester {
+  font-size: 0.82rem;
+  color: rgba(0,0,0,0.45);
+  white-space: nowrap;
 }
 
 /* Cards in "Projects" */
@@ -126,10 +220,10 @@ a {
 }
 
 .card {
-  transition: 0.5s;
-  border-radius: 2%;
+  transition: box-shadow 0.25s ease;
+  border-radius: 4px;
 }
-    
+
 .card .card-text {
   padding: .75rem 1rem;
   font-size: 15px;
@@ -141,7 +235,7 @@ a {
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 6px 18px 0 rgba(16, 37, 66, 0.15);
 }
 
 /* Center title in cards */
@@ -168,6 +262,67 @@ h4 > a {
   width: 25%;
 }
 
+/* Research paper cards */
+.paper-card {
+  border: 1.5px solid #c8dcea;
+  border-radius: 6px;
+  padding: 1.1rem 1.3rem 1rem 1.3rem;
+  margin-bottom: 1.6rem;
+  background-color: #f5f9fd;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.paper-card:hover {
+  box-shadow: 0 4px 14px rgba(16, 37, 66, 0.12);
+  border-color: #4682b4;
+}
+
+.paper-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #102542;
+  margin-bottom: 0.25rem;
+  line-height: 1.4;
+}
+
+.paper-authors {
+  font-size: 0.92rem;
+  font-style: italic;
+  color: rgba(0,0,0,0.65);
+  margin-bottom: 0.2rem;
+}
+
+.paper-date {
+  font-size: 0.85rem;
+  color: rgba(0,0,0,0.5);
+  margin-bottom: 0.75rem;
+}
+
+.paper-abstract {
+  font-size: 0.93rem;
+  color: rgba(0,0,0,0.75);
+  margin-bottom: 0.9rem;
+  line-height: 1.55;
+}
+
+.btn-pdf {
+  display: inline-block;
+  background-color: #102542;
+  color: #fff !important;
+  text-decoration: none !important;
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  transition: background-color 0.2s ease;
+}
+
+.btn-pdf:hover {
+  background-color: #4682b4;
+  color: #fff !important;
+}
+
 /* Remove the vertical line between left and right sides on homepage */
 
 html body div.container-fluid.d-none.d-lg-block.d-xl-block div.d-flex.row.flex-row.vh-100 div.d-flex.flex-column.vh-100.border-left {
@@ -184,12 +339,144 @@ html body div.container-fluid.d-none.d-lg-block.d-xl-block div.d-flex.row.flex-r
 
 .btn-outline-dark:hover {
     background-color: #4682b4;
+    border-color: #4682b4;
+    color: #fff !important;
 }
 
 /* Scroll horizontally when code is too wide (e.g URLs) */
 
 d-article div.sourceCode pre {
   overflow-x: auto !important;
+}
+
+/* ===== ROUND 2 AESTHETIC IMPROVEMENTS ===== */
+
+/* Custom text selection color */
+::selection {
+  background-color: #c8dcea;
+  color: #102542;
+}
+
+/* Page title area */
+d-title h1 {
+  font-weight: 800;
+  color: #102542;
+  letter-spacing: -0.01em;
+}
+
+d-title p {
+  color: rgba(0,0,0,0.6);
+}
+
+/* Footer polish */
+.distill-site-footer {
+  padding: 1.4rem 0;
+  border-top: 2px solid #4682b4;
+  font-size: 0.85rem;
+  letter-spacing: 0.01em;
+}
+
+/* Navbar: highlight active page */
+.distill-site-nav .nav-link.active,
+.distill-site-nav .nav-item.show .nav-link {
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Homepage portrait photo */
+.d-flex.justify-content-center img,
+img[src*="portrait"] {
+  border-radius: 6px;
+  box-shadow: 0 4px 18px rgba(16, 37, 66, 0.15);
+  border: 2px solid #dae7f1;
+}
+
+/* Homepage social-link buttons: add spacing + icon gap */
+.btn-outline-dark {
+  margin: 0.2rem 0.15rem;
+  border-radius: 5px;
+  font-size: 0.88rem;
+  letter-spacing: 0.01em;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+/* Homepage interest list bullets */
+d-article ul li,
+.mh-100 ul li {
+  margin-bottom: 0.15rem;
+}
+
+/* Code blocks: softer radius */
+d-article div.sourceCode pre,
+d-article pre {
+  border-radius: 5px;
+}
+
+/* Readings / bibliography entries */
+.csl-bib-body {
+  font-size: 0.93rem !important;
+  line-height: 1.65 !important;
+}
+
+.csl-entry {
+  padding: 0.6rem 0.8rem;
+  margin-bottom: 0.5rem !important;
+  border-radius: 4px;
+  transition: background-color 0.15s ease;
+}
+
+.csl-entry:hover {
+  background-color: #f5f9fd;
+}
+
+/* Research page: status badges */
+.badge-wip {
+  display: inline-block;
+  background-color: #e8c547;
+  color: #5a4b00;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.18rem 0.55rem;
+  border-radius: 3px;
+  margin-bottom: 0.35rem;
+}
+
+.badge-working {
+  display: inline-block;
+  background-color: #4682b4;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.18rem 0.55rem;
+  border-radius: 3px;
+  margin-bottom: 0.35rem;
+}
+
+/* Figures: add subtle frame on data-viz page */
+d-article figure,
+d-article .figure {
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+d-article figure img,
+d-article .figure img {
+  border-radius: 4px;
+  border: 1px solid #e4ecf2;
+}
+
+/* Smooth fade-in for page content */
+d-article, d-title {
+  animation: fadeIn 0.35s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
 

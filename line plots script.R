@@ -974,6 +974,33 @@ mega_combined_vars_df_SUBSET_added_vars %>%
         legend.box.background = element_rect(colour = "black")) +
   scale_x_continuous(limits = c(1980, 2020), breaks = seq(1980, 2020, by = 10)) +
   facet_wrap(vars(country_name))
+#--------------------------------------------------------------------------------
+mega_combined_vars_df_SUBSET_added_vars %>%
+  filter(iso3 %in% c("CAN", "USA", "NOR", "FRA")) %>%
+  select(year, WID_pre_tax_income_share_top_1pct, WID_pre_tax_income_share_bottom_50pct) %>%
+  rename("Private Social Spending (% GDP)" = oecd_total_private_socspend_full_pop_pct_gdp,
+         "Top 1% Income Share" = WID_pre_tax_income_share_top_1pct) %>%
+  gather(key = "Type", value = "value", -country_name, -year) %>%
+  ggplot(aes(x = year, y = value)) +
+  geom_line(aes(linetype = Type)) +
+  theme_bw(base_size = 20) +
+  labs(x = "Year",
+       y = "Percent (%)",
+       linetype = "",
+       caption = "
+       Data source(s): OECD Social Protection Database & World Inequality Database") +
+  theme(text = element_text(face = 'bold'),
+        axis.text.x = element_text(angle = 35, hjust = 1),
+        axis.title.x = element_text(vjust = -1.5),
+        panel.background = element_rect(colour = "black"),
+        strip.text.x = element_text(face = "bold"),
+        plot.caption = element_text(hjust = 0),
+        plot.caption.position = "plot",
+        legend.position = "bottom",
+        legend.background = element_blank(),
+        legend.box.background = element_rect(colour = "black")) +
+  scale_x_continuous(limits = c(1980, 2020), breaks = seq(1980, 2020, by = 10)) +
+  facet_wrap(vars(country_name))
 
 
 

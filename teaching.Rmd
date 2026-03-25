@@ -1,0 +1,39 @@
+---
+title: "Teaching Experience"
+---
+
+## Teaching Assistant
+
+<div class="teaching-institution">University of Washington</div>
+
+<div class="course-card">
+  <span class="course-code">POLS 202</span>
+  <span class="course-name">Introduction to American Government</span>
+  <span class="course-semester">Winter 2026, Spring 2026</span>
+</div>
+
+<div class="course-card">
+  <span class="course-code">POLS 203</span>
+  <span class="course-name">Introduction to International Relations</span>
+  <span class="course-semester">Spring 2025</span>
+</div>
+
+<div class="course-card">
+  <span class="course-code">CSSS 321</span>
+  <span class="course-name">Data Science and Statistics for Social Sciences</span>
+  <span class="course-semester">Winter 2025, Autumn 2025</span>
+</div>
+
+<div class="course-card">
+  <span class="course-code">POLS 270</span>
+  <span class="course-name">Introduction to Political Economy</span>
+  <span class="course-semester">Fall 2024</span>
+</div>
+
+<div class="teaching-institution">University of Georgia</div>
+
+<div class="course-card">
+  <span class="course-code">POLS 1101</span>
+  <span class="course-name">Introduction to American Government</span>
+  <span class="course-semester">Fall 2021, Spring 2022</span>
+</div>

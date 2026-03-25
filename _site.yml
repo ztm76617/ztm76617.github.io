@@ -6,18 +6,20 @@ navbar:
   right:
     - icon: fa-home
       href: index.html
+    - text: "Research"
+      href: "research.html"
+    - text: "Teaching"
+      href: "teaching.html"
+    - text: "Data Visualizations"
+      href: data_viz.html
+    - text: "Readings"
+      href: readings.html
     - text: "Resume/CV"
       menu:
       - text: "Resume"
         href: "academic_resume.pdf"
       - text: "CV"
         href: "academic CV.pdf"
-    - text: "Current Research"
-      href: "research.html"
-    - text: "Data Visualizations"
-      href: data_viz.html
-    - text: "Influential Readings"
-      href: readings.html
 output_dir: "docs"
 output: 
   distill::distill_article:

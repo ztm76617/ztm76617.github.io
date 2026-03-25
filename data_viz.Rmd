@@ -12,7 +12,6 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE,
 library(tidyverse)
 library(interactions)
 library(readxl)
-library(captioner)
 library(fredr)
 library(lubridate)
 library(scales)
