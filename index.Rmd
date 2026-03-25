@@ -53,7 +53,7 @@ The [Readings](readings.html) page collects articles and books that have most sh
 
 ```{css, echo = FALSE}
 .columnname {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: #102542;
   text-transform: uppercase;
@@ -67,22 +67,22 @@ The [Readings](readings.html) page collects articles and books that have most sh
   list-style: none;
   background-image: url(graduation-cap-solid.png);
   background-repeat: no-repeat;
-  background-size: 1.1rem;
+  background-size: 1.2rem;
   background-position: 0 0.2rem;
   padding-left: 1.8rem;
   margin-bottom: 0.65rem;
 }
 .grad-degree {
-  font-size: 0.97rem;
+  font-size: 1.05rem;
   color: #1d3549;
   font-weight: 500;
 }
 .grad-years {
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   color: rgba(0,0,0,0.5);
 }
 .grad-location {
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   color: #4682b4;
   font-style: italic;
   margin: 0;
