@@ -2150,7 +2150,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     scroll-behavior: smooth;
     /*-- Main font sizes --*/
     --title-size:      50px;
-    --body-size:       1.5rem;
+    --body-size:       1.2rem;
     --code-size:       1.12rem;
     --aside-size:      13px;
     --fig-cap-size:    14px;
@@ -2254,6 +2254,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   a:hover {
     color: #1d3549;
+  }
+
+  /* Force body font size — overrides Distill's hardcoded d-article { font-size: 1.06rem } */
+  d-article {
+    font-size: 1.2rem !important;
+    line-height: 1.75em;
   }
 
   /* Article headings */
