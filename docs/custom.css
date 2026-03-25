@@ -19,7 +19,7 @@ html {
   scroll-behavior: smooth;
   /*-- Main font sizes --*/
   --title-size:      50px;
-  --body-size:       1.18rem;
+  --body-size:       1.5rem;
   --code-size:       1.12rem;
   --aside-size:      13px;
   --fig-cap-size:    14px;

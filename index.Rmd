@@ -33,7 +33,7 @@ trestles_mod[
 
 trestles_mod <- gsub("'Roboto Slab'", '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif', trestles_mod)
 
-trestles_mod <- gsub('style="height:35rem"', 'style="width: 65%; max-width: 280px"', trestles_mod)
+trestles_mod <- gsub('style="height:35rem"', 'style="width: 80%; max-width: 360px"', trestles_mod)
 
 cat(paste(trestles_mod, collapse = "\n"), file = system.file("pandoc_templates/trestles.html",
               package = "postcards"))
@@ -45,8 +45,6 @@ cat(paste(trestles_mod, collapse = "\n"), file = system.file("pandoc_templates/t
 I am a doctoral student in Political Science at the University of Washington. My research sits at the intersection of comparative and international political economy, with a focus on income inequality, redistribution, and the politics of economic crisis across advanced democracies.
 
 I use time-series econometrics and cross-national data to study how shifts in capital investment and profit rates shape welfare state outcomes. Prior to UW, I completed my BA and MA at the University of Georgia.
-
-The [Readings](readings.html) page collects articles and books that have most shaped my thinking. Feel free to reach out by email with any questions.
 
 <br>
 

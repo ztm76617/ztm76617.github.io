@@ -2,8 +2,6 @@
 title: "Research"
 ---
 
-### Works in Progress
-
 <div class="paper-card">
 <span class="badge-wip">In Progress</span>
 <div class="paper-title">The Myth of the Myth of Independence: A Critical Response to Binder &amp; Spindel</div>
@@ -13,8 +11,6 @@ title: "Research"
 </div>
 
 ---
-
-### Working Papers
 
 <div class="paper-card">
 <span class="badge-working">Working Paper</span>

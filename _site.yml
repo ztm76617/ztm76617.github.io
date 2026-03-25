@@ -5,17 +5,13 @@ description: |
 navbar:
   right:
     - icon: fa-home
-      href: index.html
+      href: "index.html"
     - text: "Research"
       href: "research.html"
     - text: "Teaching"
       href: "teaching.html"
-    - text: "Data Visualizations"
-      href: data_viz.html
-    - text: "Readings"
-      href: readings.html
     - text: "Resume/CV"
-      href: resume.html
+      href: "resume.html"
 output_dir: "docs"
 output: 
   distill::distill_article:
